@@ -12,7 +12,7 @@ connectDB();
 app.use(express.json({extended: false}))
 
 
-//routes 
+//routes file that has got the controller routes whthin
 app.use(routes)
 
 app.listen(PORT, () => console.log(`server running on port ${PORT}`))
