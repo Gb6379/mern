@@ -2,9 +2,11 @@
   "name": "project-i",
   "version": "1.0.0",
   "description": "mern app for learning with",
-  "main": "sever.js",
+  "main": "server.js",
   "scripts": {
-    "server": "nodemon",
+    "server": "nodemon server",
+    "client": "npm start --prefix frontend",
+    "dev":"concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
